@@ -1,0 +1,13 @@
+名称：构建 Otto 固件
+触发条件：[推送,工作流调度]
+作业：
+构建：
+运行环境：ubuntu-latest
+步骤：
+- 使用 actions/checkout@v4
+- 使用 arduino/compile-sketches@v1
+使用：
+fqbn：arduino:avr:nano
+草图路径：.
+库：|
+- 名称：OttoDIYLib
