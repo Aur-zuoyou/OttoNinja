@@ -1,0 +1,13 @@
+名称: Build Otto Firmware
+on: [push, workflow_dispatch]
+作业:
+构建:
+运行平台: ubuntu-latest
+步骤:
+      - uses: actions/checkout@v4
+      - uses: arduino/compile-sketches@v1
+使用:
+          fqbn: arduino:avr:nano
+草图路径: .
+库: |
+- 名称：OttoDIYLib
